@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlasmaTracker.View.SignUp"
+             Visual="Material">
+    <ContentPage.Content>
+        <Grid>
+            <MediaElement Source="https://vod-progressive.akamaized.net/exp=1603397388~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F660%2F16%2F403300192%2F1724565100.mp4~hmac=acb2bf2b22f689ac2f3426fe4863b1c0bdb2762962a2c93e6c4686abd79ba767/vimeo-prod-skyfire-std-us/01/660/16/403300192/1724565100.mp4?filename=production+ID%3A4058090.mp4" IsLooping="True" Aspect="AspectFill"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="1" Margin="40,120,40,0">
+                    <Image Source="https://cdn3.iconfinder.com/data/icons/gradient-circle/36/1014-512.png" WidthRequest="100"></Image>
+                    <Entry Placeholder="Email" PlaceholderColor="White" x:Name="EntryEmail" Keyboard="Email" BackgroundColor="Black"/>
+                    <Entry Placeholder="Password" PlaceholderColor="White" x:Name="EntryPassword" IsPassword="True" BackgroundColor="Black"></Entry>
+                    <Entry Placeholder="Confirm Password" PlaceholderColor="White" x:Name="EntryConnformPassword" IsPassword="True" BackgroundColor="Black"></Entry>
+                    <Button Text="Sign Up" BackgroundColor="#C62729" TextColor="White" x:Name="EntrySignupButton" Clicked="EntrySignupButton_Clicked" Opacity="1"></Button>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

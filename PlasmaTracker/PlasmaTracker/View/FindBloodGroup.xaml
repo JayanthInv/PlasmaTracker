@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlasmaTracker.View.FindBloodGroup"
+             Visual="Material"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="40,0,40,0">
+            <Image Source="bd1.png" WidthRequest="150"></Image>
+        <Picker Title="Select Blood Group" TextColor="#A5A7A8" x:Name="PickerBloodGroup">
+            <Picker.Items>
+                <x:String>O+</x:String>
+                <x:String>A+</x:String>
+                <x:String>B+</x:String>
+                <x:String>AB-</x:String>
+                <x:String>B-</x:String>
+                <x:String>A-</x:String>
+                <x:String>AB+</x:String>
+            </Picker.Items>
+        </Picker>
+            <Picker Title="Select Location" TextColor="#A5A7A8" x:Name="PickerLocation">
+                <Picker.Items>
+                    <x:String>KPHB</x:String>
+                    <x:String>Jubilee Hills</x:String>
+                    <x:String>Nizampet</x:String>
+                    <x:String>Begumpet</x:String>
+                    <x:String>Vasanth Nagar</x:String>
+                    <x:String>Pragathi Nagar</x:String>
+                    <x:String>Banjara Hills</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button BackgroundColor="#009688" Text="Search" TextColor="White" x:Name="BtnSearch" Clicked="BtnSearch_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
